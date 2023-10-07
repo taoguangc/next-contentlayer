@@ -1,11 +1,11 @@
 import Link from 'next/link'
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Manrope } from 'next/font/google'
 import Header from '@/components/header'
 import Footer from '@/components/footer'
 import Lenis from '@/components/Lenis'
 
-const inter = Inter({ subsets: ['latin'] })
+const manrope = Manrope({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Create Next App',
@@ -17,7 +17,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang='en'>
       <Lenis>
         <body
-          className={`antialiased min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-50 ${inter.className}`}
+          className={`antialiased min-h-screen bg-white text-slate-900  ${manrope.className}`}
         >
           <Header />
           {children}
