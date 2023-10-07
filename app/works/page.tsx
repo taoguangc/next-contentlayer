@@ -1,6 +1,6 @@
 export default function Works() {
   return (
-    <>
+    <article className="mx-auto container">
       <h1>最新作品</h1>
       <p>
         9月29日，冠军中国选手张雨霏（左）和季军日本选手池江璃花子在颁奖仪式后。当日，杭州亚运会游泳项目女子50米蝶泳决赛在杭州奥体中心游泳馆举行。新华社记者
