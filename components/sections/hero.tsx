@@ -1,7 +1,7 @@
 
 import Image from 'next/image'
 import AnimatedText from '@/components/sections/animated-text'
-import hero from '@/public/imes/14.jpg'
+import hero from '@/public/images/14.jpg'
 
 export default function Hero() {
   return (
