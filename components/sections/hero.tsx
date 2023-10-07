@@ -1,7 +1,5 @@
-'use client'
-
 import Image from 'next/image'
-import Hero from '@/public/images/14.jpg'
+import Hero from '@/public/imes/14.jpg'
 
 export default function hero() {
   return (
