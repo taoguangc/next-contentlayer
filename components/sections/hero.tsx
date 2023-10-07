@@ -9,7 +9,7 @@ export default function Hero() {
       <section className="bg-repeat">
         <div className="container mx-auto flex flex-col px-4 pt-24 md:pt-32 lg:flex-row lg:px-8">
           <div className="w-full lg:w-3/4">
-            <AnimatedText text='Animated text with framer motion' />
+            <AnimatedText />
           </div>
           <div className="hidden md:w-1/4 lg:block">
             <div className="relative h-48 w-48 overflow-hidden text-3xl uppercase">

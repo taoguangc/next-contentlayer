@@ -2,9 +2,7 @@
 
 import { motion } from 'framer-motion'
 
-export default function AnimatedText({ text }: { text: string }) {
-  const words: string[] = text.split(' ')
-
+export default function AnimatedText() {
   const container = {
     hidden: {
       opacity: 0
@@ -38,13 +36,17 @@ export default function AnimatedText({ text }: { text: string }) {
       variants={container}
       initial='hidden'
       animate='visible'
-      className='text-6xl flex items-center justify-between overflow-hidden'
+      className='overflow-hidden'
     >
-      {words.map((word, i) => (
-        <motion.span variants={child} className='mr-2' key={i}>
-          {word}
-        </motion.span>
-      ))}
+      <motion.h1 variants={child} className='mb-4 text-4xl font-bold leading-snug tracking-wider md:mb-8 md:text-6xl xl:text-8xl'>
+        让您的网站
+      </motion.h1>
+      <motion.h1 variants={child} className='text-white text-stroke inline-block text-3xl font-bold leading-snug tracking-wider md:mb-20 md:text-5xl xl:text-7xl'>
+        动静结合，
+      </motion.h1>
+      <motion.h1 variants={child} className='inline-block text-3xl font-bold leading-snug tracking-wider md:mb-20 md:text-5xl xl:text-7xl'>
+        适合最新标准
+      </motion.h1>
     </motion.main>
   )
 }
