@@ -1,7 +1,7 @@
 ---
 title: 'Sample Blog Title 3'
 description: 'Sample excerpt, appears in blog cards'
-date: '2023-03-12T12:00:00'
+date: '2022-11-20T10:36:01.516Z'
 ---
 
 This is a sample blog post.
