@@ -29,14 +29,14 @@ const Pagination: FC<PaginationProps> = (
       <button
         className='bg-blue-500 disabled:bg-gray-200 text-white p-1'
         disabled={!hasPrevPage}
-        onClick={() => { router.push(`/blog/?page=${Number(page) - 1}&per_page=${per_page}`) }}>上一页</button>
+        onClick={() => { router.push(`/posts/?page=${Number(page) - 1}&per_page=${per_page}`) }}>上一页</button>
       <div>
         {page} / {Math.ceil(totalPage / Number(per_page))}
       </div>
       <button
         className='bg-blue-500 disabled:bg-gray-200 text-white p-1'
         disabled={!hasNextPage}
-        onClick={() => { router.push(`/blog/?page=${Number(page) + 1}&per_page=${per_page}`) }}>下一页</button>
+        onClick={() => { router.push(`/posts/?page=${Number(page) + 1}&per_page=${per_page}`) }}>下一页</button>
     </div>
   )
 }
