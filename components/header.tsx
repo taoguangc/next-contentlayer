@@ -121,7 +121,7 @@ export default function Header() {
           <Link href='/'>首页</Link>
           <Link href='/works'>作品</Link>
           <Link href='/about'>关于</Link>
-          <Link href='/blog'>博客</Link>
+          <Link href='/posts'>博客</Link>
         </nav>
         <button
           type='button'
