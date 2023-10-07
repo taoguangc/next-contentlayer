@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 import Hero from '@/public/images/14.jpg'
 
