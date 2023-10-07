@@ -1,9 +1,12 @@
-import { allPosts } from '@/.contentlayer/generated'
+import { allPosts } from 'contentlayer/generated'
 import Link from 'next/link'
+import Hero from '@/components/sections/hero'
 
 export default function Home() {
   return (
-    <div className='mx-auto container prose dark:prose-invert'>
+    <>
+      <Hero />
+      <div className='mx-auto container prose'>
       {allPosts.map(post => (
         <article key={post._id}>
           <Link href={post.slug}>
@@ -13,5 +16,6 @@ export default function Home() {
         </article>
       ))}
     </div>
+    </>
   )
 }
