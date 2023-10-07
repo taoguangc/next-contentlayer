@@ -1,4 +1,4 @@
-export default function services() {
+export default function Services() {
   return (
     <section className="py-24">
       <div className="container mx-auto flex flex-col gap-8 px-4 md:flex-row lg:px-8">

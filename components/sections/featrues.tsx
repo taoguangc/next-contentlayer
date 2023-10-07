@@ -1,4 +1,4 @@
-export default function featrues() {
+export default function Featrues() {
   return (
     <section className="container mx-auto flex flex-col gap-8 px-4 md:h-72 md:flex-row lg:px-8 xl:h-96">
       <div className="md:w-1/2 lg:w-2/5">

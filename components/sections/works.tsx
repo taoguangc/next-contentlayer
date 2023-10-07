@@ -6,7 +6,7 @@ import work04 from '@/public/images/work04.jpg'
 import work05 from '@/public/images/work05.jpg'
 import work06 from '@/public/images/work06.jpg'
 
-export default function works() {
+export default function Works() {
   return (
     <section className="worksWrapper overflow-hidden py-24">
       <div className="works flex w-[300vw] flex-row flex-nowrap justify-start gap-16 px-16 lg:px-24">

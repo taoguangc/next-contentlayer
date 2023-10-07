@@ -1,19 +1,15 @@
-import Image from 'next/image'
-import Hero from '@/public/imes/14.jpg'
 
-export default function hero() {
+import Image from 'next/image'
+import AnimatedText from '@/components/sections/animated-text'
+import hero from '@/public/imes/14.jpg'
+
+export default function Hero() {
   return (
     <>
       <section className="bg-repeat">
         <div className="container mx-auto flex flex-col px-4 pt-24 md:pt-32 lg:flex-row lg:px-8">
           <div className="w-full lg:w-3/4">
-            <h1 className="mb-4 text-4xl font-bold leading-snug tracking-wider md:mb-8 md:text-6xl xl:text-8xl">
-              <span>让您的网站</span>
-            </h1>
-            <h1 className="mb-8 text-3xl font-bold leading-snug tracking-wider md:mb-20 md:text-5xl xl:text-7xl">
-              <span className="stroke">动静结合，</span>
-              <span>适应最新标准</span>
-            </h1>
+            <AnimatedText text='Animated text with framer motion' />
           </div>
           <div className="hidden md:w-1/4 lg:block">
             <div className="relative h-48 w-48 overflow-hidden text-3xl uppercase">
@@ -59,7 +55,7 @@ export default function hero() {
           </p>
         </div>
         <div className="col-span-2 md:h-72 lg:h-[480px]">
-          <Image src={Hero} width={960} alt="Hero" placeholder="blur" sizes="(max-width: 768px) 100vw, 50vw" className="h-full w-full object-cover object-center" priority />
+          <Image src={hero} width={960} alt="Hero" placeholder="blur" sizes="(max-width: 768px) 100vw, 50vw" className="h-full w-full object-cover object-center" priority />
         </div>
       </section>
     </>

@@ -1,4 +1,4 @@
-export default function awards() {
+export default function Awards() {
   return (
     <section className="py-40">
       <div className="container mx-auto flex flex-row flex-wrap gap-y-8 px-4 lg:gap-y-16 lg:px-8">
