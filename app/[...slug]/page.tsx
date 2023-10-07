@@ -1,8 +1,8 @@
-import { notFound } from "next/navigation"
-import { Metadata } from "next"
-import { allPages } from "contentlayer/generated"
+import { notFound } from 'next/navigation'
+import { Metadata } from 'next'
+import { allPages } from 'contentlayer/generated'
 
-import { Mdx } from "@/components/mdx-components"
+import { Mdx } from '@/components/mdx-components'
 
 interface PageProps {
   params: {
@@ -10,9 +10,9 @@ interface PageProps {
   }
 }
 
-async function getPageFromParams(params: PageProps["params"]) {
-  const slug = params?.slug?.join("/")
-  const page = allPages.find((page) => page.slugAsParams === slug)
+async function getPageFromParams(params: PageProps['params']) {
+  const slug = params?.slug?.join('/')
+  const page = allPages.find(page => page.slugAsParams === slug)
 
   if (!page) {
     null
@@ -21,9 +21,7 @@ async function getPageFromParams(params: PageProps["params"]) {
   return page
 }
 
-export async function generateMetadata({
-  params,
-}: PageProps): Promise<Metadata> {
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const page = await getPageFromParams(params)
 
   if (!page) {
@@ -32,13 +30,13 @@ export async function generateMetadata({
 
   return {
     title: page.title,
-    description: page.description,
+    description: page.description
   }
 }
 
-export async function generateStaticParams(): Promise<PageProps["params"][]> {
-  return allPages.map((page) => ({
-    slug: page.slugAsParams.split("/"),
+export async function generateStaticParams(): Promise<PageProps['params'][]> {
+  return allPages.map(page => ({
+    slug: page.slugAsParams.split('/')
   }))
 }
 
@@ -50,9 +48,9 @@ export default async function PagePage({ params }: PageProps) {
   }
 
   return (
-    <article className="py-6 prose dark:prose-invert">
+    <article className='mx-auto container py-6 prose'>
       <h1>{page.title}</h1>
-      {page.description && <p className="text-xl">{page.description}</p>}
+      {page.description && <p className='text-xl'>{page.description}</p>}
       <hr />
       <Mdx code={page.body.code} />
     </article>
