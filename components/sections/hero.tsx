@@ -61,7 +61,7 @@ export default function hero() {
           </p>
         </div>
         <div className="col-span-2 md:h-72 lg:h-[480px]">
-          <Image src='/images/14.jpg' width={960} alt="Hero" placeholder="blur" className="h-full w-full object-cover object-center" priority />
+          <Image src={Hero} width={960} alt="Hero" placeholder="blur" sizes="(max-width: 768px) 100vw, 50vw" className="h-full w-full object-cover object-center" priority />
         </div>
       </section>
     </>

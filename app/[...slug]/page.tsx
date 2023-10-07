@@ -3,8 +3,6 @@ import { Metadata } from 'next'
 import { allPages } from 'contentlayer/generated'
 import { Mdx } from '@/components/mdx-components'
 
-export const runtime = 'edge'
-
 interface PageProps {
   params: {
     slug: string[]

@@ -3,8 +3,6 @@ import { allPosts } from 'contentlayer/generated'
 import { Metadata } from 'next'
 import { Mdx } from '@/components/mdx-components'
 
-export const runtime = 'edge'
-
 interface PostProps {
   params: {
     slug: string[]
