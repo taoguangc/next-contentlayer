@@ -24,7 +24,7 @@ export default function Posts({ searchParams }: { searchParams: { [key: string]:
             </Link>
           </h2>
           <time dateTime={post.date} className='mb-2 block text-xs text-gray-600'>
-            {new Date(post.date).toLocaleDateString('zh-CN', {
+            {new Date(post.date ?? '').toLocaleDateString('zh-CN', {
               year: 'numeric',
               month: 'short',
               day: 'numeric'
