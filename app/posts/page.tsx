@@ -4,13 +4,15 @@ import Pagination from '@/components/pagination'
 
 export const dynamic = 'force-static'
 
-export default function Posts({ searchParams }: { searchParams: { [key: string]: string | string[] | undefined } }) {
+export default async function Posts({ searchParams }: { searchParams: { [key: string]: string | string[] | undefined } }) {
   const per_items = '5'
   const page = searchParams['page'] ?? '1'
   const per_page = searchParams['per_page'] ?? per_items
 
   const start = (Number(page) - 1) * Number(per_page)
   const end = start + Number(per_page)
+
+  console.log(start + end)
 
   const PagiPosts = allPosts.slice(start, end)
   return (
