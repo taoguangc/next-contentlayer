@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { allPosts, type Post } from 'contentlayer/generated'
 import Pagination from '@/components/pagination'
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 export default function Posts({ searchParams }: { searchParams: { [key: string]: string | string[] | undefined } }) {
   const per_items = '5'
